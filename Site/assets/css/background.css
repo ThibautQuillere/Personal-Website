@@ -1,0 +1,80 @@
+@media (min-aspect-ratio: 1/1){
+
+	#triangle-right, #triangle-left{
+		position: fixed;
+		width: 0;
+	    height: 0;
+	    z-index: 0;
+	}
+
+	#triangle-right {
+	    right: 0px;
+	    border-top: 100vh solid #20201f;
+	    border-left: 5vw solid transparent;
+	   
+	}
+
+	#triangle-left {
+	    left: 0px;
+	    border-bottom: 100vh solid #20201f;
+	    border-right: 5vw solid transparent;
+	}
+}
+
+#rectangle-top, #rectangle-bottom{
+    background-color: #20201f;
+    position: fixed;
+    left:0px;
+    width: 100%;
+    z-index: 1;	
+}
+
+#rectangle-top {
+    top: 0;
+    height: 12.5vh;
+	
+}
+
+#rectangle-bottom {
+    bottom: 0;
+    height: 10vh;
+}
+
+#background-gradient{
+		position: fixed; 
+		z-index: -100;
+
+	  	top: 50%;
+	  	left: 50%;
+	  	transform: translate(-50%, -50%);
+
+	  	border-radius: 50%;
+
+		animation: animate 10s ease-in-out infinite;
+		background:linear-gradient(to top, #fecc07 15%, #F37812 75%);
+		
+}
+
+
+@media (min-aspect-ratio: 1/1){
+	#background-gradient{
+		width: 175vw;
+		height: 175vw;
+	}
+}
+
+@media (max-aspect-ratio: 1/1){
+	#background-gradient{
+		width: 175vh;
+		height: 175vh;
+	}
+}
+
+@keyframes animate{
+	0%{
+		transform: translate(-50%, -50%) rotateZ(0deg);
+	}
+	100%{
+		transform:translate(-50%, -50%) rotateZ(360deg);
+	}
+}

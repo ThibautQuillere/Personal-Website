@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One");
+/* font-family: 'Julius Sans One', sans-serif; */ 
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,900&display=swap');
+/* font-family: 'Lato', sans-serif; */
+/* change font-weight to have Black or Regular */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+@import url('navbar.css');
+@import url('homecontent.css');
+@import url('aboutcontent.css');
+@import url('background.css');
+@import url('footer.css');
+
+html{
+	scroll-behavior: smooth;
+}
+
+body  {
+	font-family: "Lato", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  max-height: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+	background: #fecc07;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background: #F37812;
+}
+
+::-webkit-scrollbar-track{
+	background: #20201f;
+	border-radius: 10px;
+	line-height: 10px;
+}
+
+						/* Contenu de la page */
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+
+.scroll{
+	overflow: hidden;
+}
+
+.scroll.active{
+	overflow-y: visible;
+}
+
+.page-content{
+	display: flex;
+	flex-direction: column;
+
+	position: relative;
+}
+
+#ACCUEIL, #A-PROPOS{
+	position: relative;
+}
+
+#ACCUEIL{
+	top:-1vh;
+}
+
+
+#A-PROPOS{
+	top: 30vh;
+}
+
+@media (max-aspect-ratio: 1/1){
+	#A-PROPOS{
+		top:45vh;
+	}
+
+	.page-content{
+		margin-bottom: 60vh;
+	}
+}
+
+@media (min-aspect-ratio: 1/1){
+	.page-content{
+		margin-bottom: 44vh;
+	}
+}

@@ -1,0 +1,70 @@
+@media (max-aspect-ratio: 1/1){
+	#apropos-content{
+		top: 60vh;
+		left: 2.5vw;
+		width: 95%;
+		/*height: 105vh;*/
+	}
+
+	#apropos-content p{
+		font-size: 1.8vmax;
+	}
+}
+
+@media (min-aspect-ratio: 1/1){
+	#apropos-content{
+		top:45vh;
+		left: 12.5vw;
+		width: 70vw;
+		height: 72vh;
+	}
+
+	#apropos-content p{
+		font-size:1.5vmax;
+	}
+}
+
+@media (min-aspect-ratio: 4/3){
+	#apropos-content p{
+		font-size:1.3vmax;
+	}
+}
+
+@media (min-aspect-ratio: 13/9){
+	#apropos-content p{
+		font-size:1.2vmax;
+	}
+}
+
+@media (min-aspect-ratio: 16/9){
+	#apropos-content p{
+		font-size:1.05vmax;
+	}
+}
+
+#apropos-content{
+	position: relative;
+
+	background-color: rgba(87, 55, 105, 0.59);
+	margin-bottom: 20vh;
+}
+
+#apropos-content img{
+	width: 11vmax;
+	height: 11vmax;
+
+	border-radius: 50%;
+	float: right;
+	margin: 5% 5% 0.5% 5.5% ;
+}
+
+#apropos-content p{
+	color: #f5f5f5;
+
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+	margin-right: 5%;
+	margin-left: 5%;
+	
+	height: 85%;
+}
